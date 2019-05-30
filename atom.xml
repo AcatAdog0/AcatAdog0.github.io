@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>lyzzy</title>
+  
+  <subtitle>Only The Paranoid Survive</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://nbdlyzzy.club/"/>
+  <updated>2019-05-30T08:20:27.249Z</updated>
+  <id>https://nbdlyzzy.club/</id>
+  
+  <author>
+    <name>ly</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Order for Website</title>
+    <link href="https://nbdlyzzy.club/2019/05/30/Order-for-Website/"/>
+    <id>https://nbdlyzzy.club/2019/05/30/Order-for-Website/</id>
+    <published>2019-05-30T08:17:31.000Z</published>
+    <updated>2019-05-30T08:20:27.249Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网页下载的一些快捷命令"><a href="#网页下载的一些快捷命令" class="headerlink" title="网页下载的一些快捷命令"></a>网页下载的一些快捷命令</h1><a id="more"></a><ol><li>百度文库命令：在文档页面的网址“baidu”后面加上 “vvv” 三个字母</li><li>度盘在线下载：在分享网址“baidu”后面加上 “wp” 两个字母</li><li>万能命令：在网址最前面加上万能命令 “wn.run/ ”</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;网页下载的一些快捷命令&quot;&gt;&lt;a href=&quot;#网页下载的一些快捷命令&quot; class=&quot;headerlink&quot; title=&quot;网页下载的一些快捷命令&quot;&gt;&lt;/a&gt;网页下载的一些快捷命令&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="Web" scheme="https://nbdlyzzy.club/tags/Web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>波束形成基础</title>
+    <link href="https://nbdlyzzy.club/2019/05/30/Beam-Forming/"/>
+    <id>https://nbdlyzzy.club/2019/05/30/Beam-Forming/</id>
+    <published>2019-05-30T02:29:43.000Z</published>
+    <updated>2019-05-30T12:05:21.552Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="经典波束形成算法"><a href="#经典波束形成算法" class="headerlink" title="经典波束形成算法"></a><center>经典波束形成算法</center></h1><a id="more"></a><hr><ul><li><p>概述</p><p><img src="//nbdlyzzy.club/2019/05/30/Beam-Forming/001.png" alt="经典波束成形示意图"></p><p>​    阵列信号处理经典波束形成算法的基本原理是延迟-相加(Delay and Sum),算法首先需要在空间确定一个观测平面(扫描平面)，并且假设所有声源都位于这些各点上。阵列依次聚焦到每一个格点，由于格点与各个阵元间距不同，会导致各个阵元通道的采样序列会有一个时延，表现为采样信号的相移。<br>&emsp;&emsp;经典波束形成算法的核心内容是对这些含有不同时延(由声波在空间传播引起的)的采样序列分别附加一个特定相移(由格点位置和阵元位置共同确定，起抵消由声波传播带来的相移的作用)，使得最后各个通道采样序列叠加前已恢复成同相信号。</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;经典波束形成算法&quot;&gt;&lt;a href=&quot;#经典波束形成算法&quot; class=&quot;headerlink&quot; title=&quot;经典波束形成算法&quot;&gt;&lt;/a&gt;&lt;center&gt;经典波束形成算法&lt;/center&gt;&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="Bean_Forming" scheme="https://nbdlyzzy.club/tags/Bean-Forming/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Music-Test</title>
+    <link href="https://nbdlyzzy.club/2019/05/27/Music-Test/"/>
+    <id>https://nbdlyzzy.club/2019/05/27/Music-Test/</id>
+    <published>2019-05-27T12:37:36.000Z</published>
+    <updated>2019-05-27T13:26:32.183Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="方式-1701"><a href="#方式-1701" class="headerlink" title="方式-1701"></a><center>方式-1701</center></h1><h2 id="李老B"><a href="#李老B" class="headerlink" title="李老B"></a><center>李老B</center></h2><a id="more"></a><ul><li>我只有在睡着的时候才能感觉还活着</li><li>总是在你不在的时候切肤之痛般爱你</li><li>如果明天换一种方式那是什么</li><li>如果方式解不开谜团又是什么</li><li>我真的看见微弱的光在前面没有骗你</li><li>这是我坚信悲剧的起源而悲剧也可以快乐</li><li>这种状态其实一直隐约存在没有骗你</li><li>就算是将来也是存在它是生活的本源</li><li>我可以在睡着的时候假装又死了几次</li><li>而你体会不到爱，线条般的感官</li><li>他们卖掉牛和小麦，张嘴呼吸空气</li><li>白头翁飞过拖拉机，生锈地祈求</li></ul>        <div id="aplayer-iJHSsjCx" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-iJHSsjCx"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Way",              author: "B",              url: "方式.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;方式-1701&quot;&gt;&lt;a href=&quot;#方式-1701&quot; class=&quot;headerlink&quot; title=&quot;方式-1701&quot;&gt;&lt;/a&gt;&lt;center&gt;方式-1701&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;李老B&quot;&gt;&lt;a href=&quot;#李老B&quot; class=&quot;headerlink&quot; title=&quot;李老B&quot;&gt;&lt;/a&gt;&lt;center&gt;李老B&lt;/center&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="Music" scheme="https://nbdlyzzy.club/tags/Music/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Video-Test</title>
+    <link href="https://nbdlyzzy.club/2019/05/27/Video-Test/"/>
+    <id>https://nbdlyzzy.club/2019/05/27/Video-Test/</id>
+    <published>2019-05-27T12:37:12.000Z</published>
+    <updated>2019-05-27T13:25:32.562Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="黄昏"><a href="#黄昏" class="headerlink" title="黄昏"></a><center>黄昏</center></h1><h2 id="李志、邵夷贝"><a href="#李志、邵夷贝" class="headerlink" title="李志、邵夷贝"></a><center>李志、邵夷贝</center></h2><a id="more"></a><ul><li>他用一种慈祥的姿态在高处安抚着你</li><li>他铺开巨大的过滤网层层信仰奢靡</li><li>他大义凌然地宣布要把纯净筛留给你</li><li>过滤得只剩下了残骸还要你歌颂感激</li><li>你终其一生想找到理由去热爱脚下的土地</li><li>他为其定义的伟大 对你有什么意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li><li>他庞大的身躯压垮了多少初生的纯良</li><li>他曾有的灵魂矗立在远方冷漠地观望</li><li>他费力塑造的繁华成为装扮阴暗面的假象</li><li>他毁掉的美好在不久的将来变成了疯狂</li><li>你终其一生想找到理由去热爱脚下的土地</li><li>他为其定义的伟大 对你有什么意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li><li>你终其一生找不到理由去热爱脚下的土地</li><li>传说中这里的强大是你生命的全部意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li></ul><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"/2019/05/27/Video-Test/邵夷贝%20李志《黄昏》.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;黄昏&quot;&gt;&lt;a href=&quot;#黄昏&quot; class=&quot;headerlink&quot; title=&quot;黄昏&quot;&gt;&lt;/a&gt;&lt;center&gt;黄昏&lt;/center&gt;&lt;/h1&gt;&lt;h2 id=&quot;李志、邵夷贝&quot;&gt;&lt;a href=&quot;#李志、邵夷贝&quot; class=&quot;headerlink&quot; title=&quot;李志、邵夷贝&quot;&gt;&lt;/a&gt;&lt;center&gt;李志、邵夷贝&lt;/center&gt;&lt;/h2&gt;
+    
+    </summary>
+    
+    
+      <category term="Video" scheme="https://nbdlyzzy.club/tags/Video/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>my new post</title>
+    <link href="https://nbdlyzzy.club/2019/05/26/my-new-post/"/>
+    <id>https://nbdlyzzy.club/2019/05/26/my-new-post/</id>
+    <published>2019-05-26T03:58:15.000Z</published>
+    <updated>2019-05-27T13:28:34.265Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="this-is-my-first-time-to-post-a-blog"><a href="#this-is-my-first-time-to-post-a-blog" class="headerlink" title="this is my first time to post a blog"></a>this is my first time to post a blog</h1><a id="more"></a><ul><li>I hope i can update this blog all the time!</li></ul><p>This is a regular paragraph.</p><table>    <tr>        <td>Foo</td>    </tr></table><p>This is another regular paragraph.</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;this-is-my-first-time-to-post-a-blog&quot;&gt;&lt;a href=&quot;#this-is-my-first-time-to-post-a-blog&quot; class=&quot;headerlink&quot; title=&quot;this is my first time to post a blog&quot;&gt;&lt;/a&gt;this is my first time to post a blog&lt;/h1&gt;
+    
+    </summary>
+    
+    
+      <category term="default" scheme="https://nbdlyzzy.club/tags/default/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://nbdlyzzy.club/2019/05/26/hello-world/"/>
+    <id>https://nbdlyzzy.club/2019/05/26/hello-world/</id>
+    <published>2019-05-26T02:53:23.398Z</published>
+    <updated>2019-05-30T02:47:39.562Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!<a id="more"></a> This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="刘炎"><a href="#刘炎" class="headerlink" title="刘炎"></a>刘炎</h1><h2 id="刘炎-1"><a href="#刘炎-1" class="headerlink" title="刘炎"></a>刘炎</h2><h3 id="刘炎-2"><a href="#刘炎-2" class="headerlink" title="刘炎"></a>刘炎</h3><ul><li>1</li></ul><ul><li>2</li><li>3</li><li>4</li></ul><hr><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;!&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="test" scheme="https://nbdlyzzy.club/categories/test/"/>
+    
+    
+      <category term="default" scheme="https://nbdlyzzy.club/tags/default/"/>
+    
+  </entry>
+  
+</feed>
