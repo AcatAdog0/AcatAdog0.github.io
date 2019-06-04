@@ -41,9 +41,9 @@
     <link href="https://nbdlyzzy.club/2019/05/30/Beam-Forming/"/>
     <id>https://nbdlyzzy.club/2019/05/30/Beam-Forming/</id>
     <published>2019-05-30T02:29:43.000Z</published>
-    <updated>2019-05-30T12:05:21.552Z</updated>
+    <updated>2019-06-04T13:43:28.075Z</updated>
     
-    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="经典波束形成算法"><a href="#经典波束形成算法" class="headerlink" title="经典波束形成算法"></a><center>经典波束形成算法</center></h1><a id="more"></a><hr><ul><li><p>概述</p><p><img src="//nbdlyzzy.club/2019/05/30/Beam-Forming/001.png" alt="经典波束成形示意图"></p><p>​    阵列信号处理经典波束形成算法的基本原理是延迟-相加(Delay and Sum),算法首先需要在空间确定一个观测平面(扫描平面)，并且假设所有声源都位于这些各点上。阵列依次聚焦到每一个格点，由于格点与各个阵元间距不同，会导致各个阵元通道的采样序列会有一个时延，表现为采样信号的相移。<br>&emsp;&emsp;经典波束形成算法的核心内容是对这些含有不同时延(由声波在空间传播引起的)的采样序列分别附加一个特定相移(由格点位置和阵元位置共同确定，起抵消由声波传播带来的相移的作用)，使得最后各个通道采样序列叠加前已恢复成同相信号。</p></li></ul>]]></content>
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="经典波束形成算法"><a href="#经典波束形成算法" class="headerlink" title="经典波束形成算法"></a><center>经典波束形成算法</center></h1><a id="more"></a><hr><ul><li><p>概述</p><p><img src="//nbdlyzzy.club/2019/05/30/Beam-Forming/001.png" alt="经典波束成形示意图">  &emsp; &emsp; 阵列信号处理经典波束形成算法的基本原理是延迟-相加(Delay and Sum),算法首先需要在空间确定一个观测平面(扫描平面)，并且假设所有声源都位于这些各点上。阵列依次聚焦到每一个格点，由于格点与各个阵元间距不同，会导致各个阵元通道的采样序列会有一个时延，表现为采样信号的相移。<br>&emsp; &emsp; 经典波束形成算法的核心内容是对这些含有不同时延(由声波在空间传播引起的)的采样序列分别附加一个特定相移(由格点位置和阵元位置共同确定，起抵消由声波传播带来的相移的作用)，使得最后各个通道采样序列叠加前已恢复成同相信号。</p></li><li><p>近场和远场</p><p>&emsp; &emsp; 波束形成算法主要运用在远场情况下，阵列波前可认为是简单的平面波，信号到达每个阵元的方向是相同的，每个阵元接收信号幅度衰减差异也可以忽略。但是在近场情况下，阵列波前应该采用球面波前模型，信号到达每个阵元的方向和幅度均不同。所以近场阵列处理要综合考虑幅度衰减和相位差两个因数。</p><p>&emsp; &emsp; 对于一个长度为L的均匀直线阵列，如果信源与阵列的距离$ r &lt; 2L^2/\lambda $ ，$ \lambda$ 为声波的波长。则该信源位于近场范围之内。语音的频率范围为$ [340, 3400]Hz$，音速$ c=340m/s$，可以得到波长$ \lambda $的范围为$ [0.1, 1.0]m $。一个间距为$ 0.08m $、16元均匀直线麦克风阵列，其长度为$ L=15*0.08=1.20m$。只有当信源距离$ r\geq 28.8m$时，才可以认为声源位于麦克风阵列的远场。</p></li></ul>]]></content>
     
     <summary type="html">
     

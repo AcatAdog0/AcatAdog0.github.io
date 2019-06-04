@@ -1,54 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title><![CDATA[Order for Website]]></title>
-    <url>%2F2019%2F05%2F30%2FOrder-for-Website%2F</url>
-    <content type="text"><![CDATA[网页下载的一些快捷命令 百度文库命令：在文档页面的网址“baidu”后面加上 “vvv” 三个字母 度盘在线下载：在分享网址“baidu”后面加上 “wp” 两个字母 万能命令：在网址最前面加上万能命令 “wn.run/ ”]]></content>
-      <tags>
-        <tag>Web</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[波束形成基础]]></title>
-    <url>%2F2019%2F05%2F30%2FBeam-Forming%2F</url>
-    <content type="text"><![CDATA[经典波束形成算法 概述 ​ 阵列信号处理经典波束形成算法的基本原理是延迟-相加(Delay and Sum),算法首先需要在空间确定一个观测平面(扫描平面)，并且假设所有声源都位于这些各点上。阵列依次聚焦到每一个格点，由于格点与各个阵元间距不同，会导致各个阵元通道的采样序列会有一个时延，表现为采样信号的相移。&emsp;&emsp;经典波束形成算法的核心内容是对这些含有不同时延(由声波在空间传播引起的)的采样序列分别附加一个特定相移(由格点位置和阵元位置共同确定，起抵消由声波传播带来的相移的作用)，使得最后各个通道采样序列叠加前已恢复成同相信号。]]></content>
-      <tags>
-        <tag>Bean_Forming</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Music-Test]]></title>
-    <url>%2F2019%2F05%2F27%2FMusic-Test%2F</url>
-    <content type="text"><![CDATA[方式-1701李老B 我只有在睡着的时候才能感觉还活着 总是在你不在的时候切肤之痛般爱你 如果明天换一种方式那是什么 如果方式解不开谜团又是什么 我真的看见微弱的光在前面没有骗你 这是我坚信悲剧的起源而悲剧也可以快乐 这种状态其实一直隐约存在没有骗你 就算是将来也是存在它是生活的本源 我可以在睡着的时候假装又死了几次 而你体会不到爱，线条般的感官 他们卖掉牛和小麦，张嘴呼吸空气 白头翁飞过拖拉机，生锈地祈求 var ap = new APlayer({ element: document.getElementById("aplayer-qQiWOjog"), narrow: false, autoplay: false, showlrc: false, music: { title: "Way", author: "B", url: "方式.mp3", pic: "", lrc: "" } }); window.aplayers || (window.aplayers = []); window.aplayers.push(ap);]]></content>
-      <tags>
-        <tag>Music</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Video-Test]]></title>
-    <url>%2F2019%2F05%2F27%2FVideo-Test%2F</url>
-    <content type="text"><![CDATA[黄昏李志、邵夷贝 他用一种慈祥的姿态在高处安抚着你 他铺开巨大的过滤网层层信仰奢靡 他大义凌然地宣布要把纯净筛留给你 过滤得只剩下了残骸还要你歌颂感激 你终其一生想找到理由去热爱脚下的土地 他为其定义的伟大 对你有什么意义 你所能做的只是在奔跑中保护好你自己 你想要感受到他爱你 愿他别去伤害你 他庞大的身躯压垮了多少初生的纯良 他曾有的灵魂矗立在远方冷漠地观望 他费力塑造的繁华成为装扮阴暗面的假象 他毁掉的美好在不久的将来变成了疯狂 你终其一生想找到理由去热爱脚下的土地 他为其定义的伟大 对你有什么意义 你所能做的只是在奔跑中保护好你自己 你想要感受到他爱你 愿他别去伤害你 你终其一生找不到理由去热爱脚下的土地 传说中这里的强大是你生命的全部意义 你所能做的只是在奔跑中保护好你自己 你想要感受到他爱你 愿他别去伤害你 (function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"/2019/05/27/Video-Test/邵夷贝%20李志《黄昏》.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()]]></content>
-      <tags>
-        <tag>Video</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[my new post]]></title>
-    <url>%2F2019%2F05%2F26%2Fmy-new-post%2F</url>
-    <content type="text"><![CDATA[this is my first time to post a blog I hope i can update this blog all the time! This is a regular paragraph. Foo This is another regular paragraph.]]></content>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2019%2F05%2F26%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 刘炎刘炎刘炎 1 2 3 4]]></content>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Order for Website</title>
+      <link href="/2019/05/30/Order-for-Website/"/>
+      <url>/2019/05/30/Order-for-Website/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="网页下载的一些快捷命令"><a href="#网页下载的一些快捷命令" class="headerlink" title="网页下载的一些快捷命令"></a>网页下载的一些快捷命令</h1><a id="more"></a><ol><li>百度文库命令：在文档页面的网址“baidu”后面加上 “vvv” 三个字母</li><li>度盘在线下载：在分享网址“baidu”后面加上 “wp” 两个字母</li><li>万能命令：在网址最前面加上万能命令 “wn.run/ ”</li></ol>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Web </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>波束形成基础</title>
+      <link href="/2019/05/30/Beam-Forming/"/>
+      <url>/2019/05/30/Beam-Forming/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="经典波束形成算法"><a href="#经典波束形成算法" class="headerlink" title="经典波束形成算法"></a><center>经典波束形成算法</center></h1><a id="more"></a><hr><ul><li><p>概述</p><p><img src="//nbdlyzzy.club/2019/05/30/Beam-Forming/001.png" alt="经典波束成形示意图">  &emsp; &emsp; 阵列信号处理经典波束形成算法的基本原理是延迟-相加(Delay and Sum),算法首先需要在空间确定一个观测平面(扫描平面)，并且假设所有声源都位于这些各点上。阵列依次聚焦到每一个格点，由于格点与各个阵元间距不同，会导致各个阵元通道的采样序列会有一个时延，表现为采样信号的相移。<br>&emsp; &emsp; 经典波束形成算法的核心内容是对这些含有不同时延(由声波在空间传播引起的)的采样序列分别附加一个特定相移(由格点位置和阵元位置共同确定，起抵消由声波传播带来的相移的作用)，使得最后各个通道采样序列叠加前已恢复成同相信号。</p></li><li><p>近场和远场</p><p>&emsp; &emsp; 波束形成算法主要运用在远场情况下，阵列波前可认为是简单的平面波，信号到达每个阵元的方向是相同的，每个阵元接收信号幅度衰减差异也可以忽略。但是在近场情况下，阵列波前应该采用球面波前模型，信号到达每个阵元的方向和幅度均不同。所以近场阵列处理要综合考虑幅度衰减和相位差两个因数。</p><p>&emsp; &emsp; 对于一个长度为L的均匀直线阵列，如果信源与阵列的距离$ r &lt; 2L^2/\lambda $ ，$ \lambda$ 为声波的波长。则该信源位于近场范围之内。语音的频率范围为$ [340, 3400]Hz$，音速$ c=340m/s$，可以得到波长$ \lambda $的范围为$ [0.1, 1.0]m $。一个间距为$ 0.08m $、16元均匀直线麦克风阵列，其长度为$ L=15*0.08=1.20m$。只有当信源距离$ r\geq 28.8m$时，才可以认为声源位于麦克风阵列的远场。</p></li></ul>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Bean_Forming </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Music-Test</title>
+      <link href="/2019/05/27/Music-Test/"/>
+      <url>/2019/05/27/Music-Test/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="方式-1701"><a href="#方式-1701" class="headerlink" title="方式-1701"></a><center>方式-1701</center></h1><h2 id="李老B"><a href="#李老B" class="headerlink" title="李老B"></a><center>李老B</center></h2><a id="more"></a><ul><li>我只有在睡着的时候才能感觉还活着</li><li>总是在你不在的时候切肤之痛般爱你</li><li>如果明天换一种方式那是什么</li><li>如果方式解不开谜团又是什么</li><li>我真的看见微弱的光在前面没有骗你</li><li>这是我坚信悲剧的起源而悲剧也可以快乐</li><li>这种状态其实一直隐约存在没有骗你</li><li>就算是将来也是存在它是生活的本源</li><li>我可以在睡着的时候假装又死了几次</li><li>而你体会不到爱，线条般的感官</li><li>他们卖掉牛和小麦，张嘴呼吸空气</li><li>白头翁飞过拖拉机，生锈地祈求</li></ul>        <div id="aplayer-qQiWOjog" class="aplayer aplayer-tag-marker" style="margin-bottom: 20px;">            <pre class="aplayer-lrc-content"></pre>        </div>        <script>          var ap = new APlayer({            element: document.getElementById("aplayer-qQiWOjog"),            narrow: false,            autoplay: false,            showlrc: false,            music: {              title: "Way",              author: "B",              url: "方式.mp3",              pic: "",              lrc: ""            }          });          window.aplayers || (window.aplayers = []);          window.aplayers.push(ap);        </script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Music </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Video-Test</title>
+      <link href="/2019/05/27/Video-Test/"/>
+      <url>/2019/05/27/Video-Test/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="黄昏"><a href="#黄昏" class="headerlink" title="黄昏"></a><center>黄昏</center></h1><h2 id="李志、邵夷贝"><a href="#李志、邵夷贝" class="headerlink" title="李志、邵夷贝"></a><center>李志、邵夷贝</center></h2><a id="more"></a><ul><li>他用一种慈祥的姿态在高处安抚着你</li><li>他铺开巨大的过滤网层层信仰奢靡</li><li>他大义凌然地宣布要把纯净筛留给你</li><li>过滤得只剩下了残骸还要你歌颂感激</li><li>你终其一生想找到理由去热爱脚下的土地</li><li>他为其定义的伟大 对你有什么意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li><li>他庞大的身躯压垮了多少初生的纯良</li><li>他曾有的灵魂矗立在远方冷漠地观望</li><li>他费力塑造的繁华成为装扮阴暗面的假象</li><li>他毁掉的美好在不久的将来变成了疯狂</li><li>你终其一生想找到理由去热爱脚下的土地</li><li>他为其定义的伟大 对你有什么意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li><li>你终其一生找不到理由去热爱脚下的土地</li><li>传说中这里的强大是你生命的全部意义</li><li>你所能做的只是在奔跑中保护好你自己</li><li>你想要感受到他爱你 愿他别去伤害你</li></ul><div id="dplayer0" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer0"),"video":{"url":"/2019/05/27/Video-Test/邵夷贝%20李志《黄昏》.mp4"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Video </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>my new post</title>
+      <link href="/2019/05/26/my-new-post/"/>
+      <url>/2019/05/26/my-new-post/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="this-is-my-first-time-to-post-a-blog"><a href="#this-is-my-first-time-to-post-a-blog" class="headerlink" title="this is my first time to post a blog"></a>this is my first time to post a blog</h1><a id="more"></a><ul><li>I hope i can update this blog all the time!</li></ul><p>This is a regular paragraph.</p><table>    <tr>        <td>Foo</td>    </tr></table><p>This is another regular paragraph.</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> default </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2019/05/26/hello-world/"/>
+      <url>/2019/05/26/hello-world/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>!<a id="more"></a> This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p><h1 id="刘炎"><a href="#刘炎" class="headerlink" title="刘炎"></a>刘炎</h1><h2 id="刘炎-1"><a href="#刘炎-1" class="headerlink" title="刘炎"></a>刘炎</h2><h3 id="刘炎-2"><a href="#刘炎-2" class="headerlink" title="刘炎"></a>刘炎</h3><ul><li>1</li></ul><ul><li>2</li><li>3</li><li>4</li></ul><hr><hr>]]></content>
+      
+      
       <categories>
-        <category>test</category>
+          
+          <category> test </category>
+          
       </categories>
-      <tags>
-        <tag>default</tag>
-      </tags>
-  </entry>
+      
+      
+        <tags>
+            
+            <tag> default </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>
