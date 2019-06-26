@@ -65,6 +65,9 @@
 
     <script>
     (function(){
+	$('html').on('touchstart',function(){
+    		audio.play();
+	});
         var canvas = $('#canvas');
 		
         if (!canvas[0].getContext) {
