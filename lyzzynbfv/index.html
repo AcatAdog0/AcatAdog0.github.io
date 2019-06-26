@@ -70,7 +70,7 @@
             audioAutoPlay();
         });
         function audioAutoPlay() {
-            var audio = document.getElementById('bg-music');
+            var audio = document.getElementById('lyzy');
             audio.play();
             document.addEventListener("WeixinJSBridgeReady", function () {
                 audio.play();
@@ -95,7 +95,7 @@
             document.addEventListener('DOMContentLoaded', musicInWeixinHandler);
         }
         function musicPlay(isPlay) {
-            var media = document.querySelector('#bg-music');
+            var media = document.querySelector('#lyzy');
             if (isPlay && media.paused) {
                 media.play();
             }
