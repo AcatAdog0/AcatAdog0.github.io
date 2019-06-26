@@ -20,7 +20,7 @@
         </style>
 </head>
     <body>
-			<audio autoplay="autopaly">
+			<audio id="lyzy" autoplay="autopaly" loop="loop">
 					<source src="./lyzy.m4a" type="audio/mpeg" />
 			</audio>
         <div id="main">
@@ -65,9 +65,6 @@
 
     <script>
     (function(){
-	$('html').on('touchstart',function(){
-    		audio.play();
-	});
         var canvas = $('#canvas');
 		
         if (!canvas[0].getContext) {
@@ -224,4 +221,6 @@
 
         runAsync().start();
     })();
+	    //手机端
+	    document.getElementById('lyzy').play();
     </script></body></html>
