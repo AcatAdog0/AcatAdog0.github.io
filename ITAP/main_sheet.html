@@ -75,201 +75,160 @@
     
         
         <h3>All Members</h3>
-        
-           
-            
-            <!-- / Buttons 
-            <h4>Buttons</h4>
-            <a class="btn btn-default" href="#" role="button">Button #1</a>
-            <a class="btn btn-primary" href="#" role="button">Button #2</a>
-            <a class="btn btn-success" href="#" role="button">Button #3</a>
-            <a class="btn btn-info" href="#" role="button">Button #4</a>
-            <a class="btn btn-warning" href="#" role="button">Button #5</a>
-            <a class="btn btn-danger" href="#" role="button">Button #6</a>
-             / Buttons -->
-            
-            
-            <!-- / Buttons 
-            <h4>Alerts</h4>
-            <p class="alert bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-            <p class="alert bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-            <p class="alert bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
-            <p class="alert bg-warning">Etiam porta sem malesuada magna mollis euismod.</p>
-            <p class="alert bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
-             \ Buttons -->
-            
-            
-            
-            
-            <!-- / Tabs 
-            <h4>Tabs</h4>
-            <div role="tabpanel">
-                <!-- Nav tabs 
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
-                    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
-                </ul>
-                    
-                <!-- Tab panes 
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                    Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica. Reprehenderit butcher retro keffiyeh dreamcatcher synth. Cosby sweater eu banh mi, qui irure terry richardson ex squid. Aliquip placeat salvia cillum iphone. Seitan aliquip quis cardigan american apparel, butcher voluptate nisi qui.
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="profile">
-                    Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid. Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko farm-to-table craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts ullamco ad vinyl cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica VHS salvia yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit, sustainable jean shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr butcher vero sint qui sapiente accusamus tattooed echo park.
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="messages">
-                    Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade. Messenger bag gentrify pitchfork tattooed craft beer, iphone skateboard locavore carles etsy salvia banksy hoodie helvetica. DIY synth PBR banksy irony. Leggings gentrify squid 8-bit cred pitchfork. Williamsburg banh mi whatever gluten-free, carles pitchfork biodiesel fixie etsy retro mlkshk vice blog. Scenester cred you probably haven't heard of them, vinyl craft beer blog stumptown. Pitchfork sustainable tofu synth chambray yr.
-                    </div>
-                </div>
-            </div>
-            <!-- \ Tabs -->
-            
 
+<!--        <div class="container">
+  <input id="key_word" class="key_word" type="text" placeholder="Search...">
+  <div class="search"></div>
+</div>-->
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="搜索...">
             <!-- / Table -->
             <!--<h4>Table</h4> -->
-            <table class="table" width="1500px">
+            <table id="table" class="table" width="1500px">
             <!--  <caption>Optional table caption goes here.</caption> -->
               <thead>
                 <tr>
                   <th style="width: 50px">ID</th>
                   <th style="width: 150px">Name</th>
-                  <th style="width: 900px">Research Topics</th>
-                  <th>Institution</th>
-                  <th>Email</th>
+                  <th style="width: 750px">Research Topics</th>
+                  <th style="width: 180px">Institution</th>
+                  <th style="width: 220px">Email</th>
+                  <th>Title</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
-                  <td><a href="https://www.cityu.edu.hk/seem/meachan/" target="_blank">Alan H.S. Chan</a></td>
+                  <td><a href="https://www.cityu.edu.hk/seem/meachan/" style="text-decoration:underline;color: #000" target="_blank">Alan H.S. Chan</a></td>
                   <td>Human Factors and Ergonomics; Safety and Health</td>
                   <td>City University of Hong Kong</td>
                   <td>alan.chan@cityu.edu.hk</td>
+                  <td>Professor</td>
                 </tr>
                 <tr>
                   <th scope="row">2</th>
-                  <td><a href="https://faculty.erau.edu/Alex.Chaparro" target="_blank">Alex Chaparro</a></td>
+                  <td><a href="https://faculty.erau.edu/Alex.Chaparro" style="text-decoration:underline;color: #000" target="_blank">Alex Chaparro</a></td>
                   <td>Driving; Perception; Human Factors</td>
                   <td>Embry-Riddle Aeronautical University</td>
                   <td>Alex.Chaparro@erau.edu</td>
+                  <td>Professor</td>
                 </tr>
                 <tr>
                   <th scope="row">3</th>
-                  <td><a href="http://condor.depaul.edu/astuhlma/" target="_blank">Alice F. Stuhlmacher</a></td>
+                  <td><a href="http://condor.depaul.edu/astuhlma/" style="text-decoration:underline;color: #000" target="_blank">Alice F. Stuhlmacher</a></td>
                   <td>"I study how to make the workplace “work” for everyone, in terms of organizational and individual productivity as well as employee well-being. Current projects include understanding  processes that influence access to organizational resources and opportunities (such as negotiation), organizational level policies and procedures, and using data and empirical research to drive organizational change. My research has also focused on the influences of individual differences (gender roles, race, personality, and decision-making), organizational context, and meta-analytic research and reviews. Email is the best way to reach me for speaking engagements for organizations and groups."</td>
                   <td>DePaul University</td>
                   <td>astuhlma@depaul.edu</td>
+                  <td>Professor</td>
                 </tr>
                 <tr>
                   <th scope="row">4</th>
-                  <td><a href="https://scholar.google.de/citations?user=v73Ej1QAAAAJ&hl=en" target="_blank">Alvaro Taveira</a></td>
+                  <td><a href="https://scholar.google.de/citations?user=v73Ej1QAAAAJ&hl=en" target="_blank" style="text-decoration:underline;color: #000" >Alvaro Taveira</a></td>
                   <td></td>
                   <td>University of Wisconsin–Whitewater, Whitewater, USA</td>
                   <td>taveiraa@uww.edu</td>
+                  <td>Professor & Chair at University of Wisconsin - Whitewater</td>
                 </tr>
                 <tr>
                   <th scope="row">5</th>
-                  <td><a href="https://www.fdv.uni-lj.si/en/news-and-information/contacts/teachers/info/andraz-petrovcic/" target="_blank">Andraž Petrovčič</a></td>
+                  <td><a href="https://www.fdv.uni-lj.si/en/news-and-information/contacts/teachers/info/andraz-petrovcic/" style="text-decoration:underline;color: #000" target="_blank">Andraž Petrovčič</a></td>
                   <td>ICT & aging; Gerontechnology; Mobile usability; Internet Studies; Survey Methodology</td>
                   <td>University of Ljubljana Faculty of Social Sciences Centre for Social Informatics</td>
                   <td>Andraz.Petrovcic@fdv.uni-lj.si</td>
+                  <td>Assistant Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td><a href="https://www.researchgate.net/profile/Andrea_Bosco" style="text-decoration:underline;color: #000" target="_blank">Andrea Bosco</a></td>
+                  <td>Spatial cognition; spatial memory; spatial mental representation; navigation; topographical disorientation; aging & spatial cognition; Neurodevelopmental and neurodegenerative diseases: Assessment & Interventions; Intervention in minimally conscious state; Psychological burden of caregivers, health / social workers</td>
+                  <td>University of Bari Aldo Moro</td>
+                  <td>a.bosco@psico.uniba.it</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td><a href="https://www.sfu.ca/gerontology/about/faculty-staff/andrew-sixsmith.html" style="text-decoration:underline;color: #000" target="_blank">Andrew Sixsmith</a></td>
+                  <td>Health and quality of life of older people and the role of health and social care services; strategic development of research in the area of technology for independent living.</td>
+                  <td>Simon Fraser University</td>
+                  <td>sixsmith@sfu.ca</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td><a href="https://www.lboro.ac.uk/departments/sbe/staff/emeritus/anne-morris/" style="text-decoration:underline;color: #000" target="_blank">Anne Morris</a></td>
+                  <td>System usability; User evaluation of information systems; User information seeking behaviour; Research Methods</td>
+                  <td>Loughborough University</td>
+                  <td>a.morris@lboro.ac.uk</td>
+                  <td>Professor at Loughborough University</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td><a href="https://www.researchgate.net/profile/Antonio_Teixeira4" style="text-decoration:underline;color: #000" target="_blank">António Teixeira</a></td>
+                  <td>Software Development; Information Extraction; Human Machine Interaction; Computer Engineering</td>
+                  <td>University of Aveiro, Institute of Electronics and Telematics Engineering of Aveiro</td>
+                  <td>ajst@ua.pt</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td><a href="https://www.researchgate.net/profile/Bill_Kearns" style="text-decoration:underline;color: #000" target="_blank">Bill Kearns</a></td>
+                  <td>Cognitive Neuroscience; Memory; Computational Intelligence; Cognitive Neuropsychology</td>
+                  <td>University of South Florida</td>
+                  <td>kearns@usf.edu</td>
+                  <td>Assistant professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">11</th>
+                  <td><a href="https://engineering.purdue.edu/Engr/People/NewFaculty/New_Faculty_2017/pitts.html" style="text-decoration:underline;color: #000" target="_blank">Brandon J. Pitts</a></td>
+                  <td>Cognitive ergonomics; human-automation interaction; multimodal/multisensory information processing; adaptive displays and aging and technology.</td>
+                  <td>Purdue University</td>
+                  <td>bjpitts@purdue.edu</td>
+                  <td>Assistant professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">12</th>
+                  <td><a href="https://experts.mcmaster.ca/display/vrkljan" style="text-decoration:underline;color: #000" target="_blank">Brenda Vrkljan</a></td>
+                  <td>Dr.Vrkljan’s research focus is on driver rehabilitation and community mobility across the lifespan, as well as technology use and participation in older adulthood.</td>
+                  <td>McMaster University</td>
+                  <td>vrkljan@mcmaster.ca</td>
+                  <td>Assistant professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">13</th>
+                  <td><a href="https://psy.fsu.edu/faculty/charnessn/charness.dp.php" style="text-decoration:underline;color: #000" target="_blank">Charness, Neil </a></td>
+                  <td>Human factors approaches to understanding aging and technology use; older driver and pedestrian safety.</td>
+                  <td>Florida State University</td>
+                  <td>charness@psy.fsu.edu</td>
+                  <td>Professor of psychology</td>
+                </tr>
+                <tr>
+                  <th scope="row">14</th>
+                  <td><a href="https://cynthiabreazeal.media.mit.edu/" style="text-decoration:underline;color: #000" target="_blank">Cynthia Breazeal</a></td>
+                  <td>Social Robotics; Human Robot Interaction</td>
+                  <td>MIT</td>
+                  <td>cynthiab@media.mit.edu </td>
+                  <td>Associate Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">15</th>
+                  <td><a href="http://destrin.smalldata.io/" style="text-decoration:underline;color: #000" target="_blank">Deborah Estrin</a></td>
+                  <td>mobile health; personal informatics, and privacy</td>
+                  <td>Cornell University</td>
+                  <td>destrin@cs.cornell.edu</td>
+                  <td>Professor</td>
+                </tr>
+                <tr>
+                  <th scope="row">16</th>
+                  <td><a href="https://tarc.wsu.edu/corefaculty/dyck/" style="text-decoration:underline;color: #000" target="_blank">Dennis Dyck</a></td>
+                  <td>Co-occurring Disorders; Affective Neuroscience; Addiction; Chronic Pain; Opiates; Cannabinoids; Clinical Trials</td>
+                  <td>Washington State University</td>
+                  <td>dyck@wsu.edu</td>
+                  <td>Professor</td>
                 </tr>
               </tbody>
             </table>
             <!-- \ Table -->
 
-
-
-            <!-- / Grids 
-            <h4>Grids</h4>
-            
-            <h5><b>Full Width</b></h5>
-            <div class="row">
-              <div class="col-md-12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-            
-            <h5><b>2 / 3 Columns</b></h5>
-            <div class="row">
-              <div class="col-md-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-4">
-              Molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-            
-            <h5><b>1 / 2 Columns</b></h5>
-            <div class="row">
-              <div class="col-md-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-            
-            <h5><b>1 / 3 Columns</b></h5>
-            <div class="row">
-              <div class="col-md-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-4">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et elit erat. Nullam non est elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-            
-            <h5><b>1 / 4 Columns</b></h5>
-            <div class="row">
-              <div class="col-md-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean pulvinar enim quis magna gravida fermentum. Praesent blandit lacinia ullamcorper. Morbi volutpat molestie est, sed bibendum est hendrerit eget. Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-            
-            <h5><b>1 / 6 Columns</b></h5>
-            <div class="row">
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-              <div class="col-md-2">
-              Vivamus ornare sollicitudin pulvinar. Integer ut semper lorem. Aenean sit amet arcu libero. Maecenas lobortis velit mauris.
-              </div>
-            </div>
-			<!-- \ Grids -->
-
-
-
-
-
-
-            
+  
     </div>
 </div>
 <!-- / Site Main -->
@@ -286,11 +245,10 @@
     
     <!-- Bootstrap -->
 	<script src="js/bootstrap/bootstrap.min.js"></script>
-
-
-    
+  
+  <script src="js/search.js"></script>
 <!-- \ JS Files  -->
-
+  
 
 
 </body>
