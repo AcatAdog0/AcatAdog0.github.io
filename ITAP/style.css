@@ -43,7 +43,7 @@ input, textarea {
 	left: 0;
 	padding-top: 0;
 	overflow: hidden;
-	width:100%;
+	width:200px auto;
 	height:100%;
 	display:block;
 	content: ' ';
