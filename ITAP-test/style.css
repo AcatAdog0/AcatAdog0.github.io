@@ -157,7 +157,7 @@ svg {
 	text-decoration:none
 }
 .site-main {
-	margin-left:100px;
+	margin-left:200px;
 	text-align:center;
 }
 .inner {
@@ -180,180 +180,36 @@ svg {
 	margin-right:0px;
 	margin-left:0px
 }
-/* [[[ Portfolio Single ]]] */
 
-.portfolio-single .site-main img {
-	max-width:600px;
-	width:100%;
-	height:auto;
-	margin:10px 0px;
-}
-.portfolio-single .site-main .inner {
-	max-width:640px;
-	width:100%;
-	margin:0px auto;
-	padding:20px;
-}
-.portfolio-single .site-main .inner h2, p {
-	width:100%;
-	float:left;
-	text-align:left;
-}
-.portfolio-single .site-main .inner h2 {
-	padding-top:20px;
-}
-.portfolio-single .site-main .inner .next {
-	color:#000;
-	padding:50px;
-}
-.portfolio-single .site-main .inner .next img {
-	width:inherit;
-	margin:10px;
-}
-.portfolio-single .site-main .desc {
-	margin-top:20px;
-}
-.portfolio-single .site-main li {
-	float:left;
-	width:100%;
-	margin-top:0px;
-	text-align:left;
-	color:#777;
-	font-size:14px;
-}
-/* [[[ Blog ]]] */
-
-.blog .post img {
-	max-width:600px;
-	width:100%;
-	height:auto;
-}
-.blog .post {
-	margin-bottom:40px;
-	float:left
-}
-.blog .post h2, p, .date {
-	width:100%;
-	float:left;
-	text-align:left;
-}
-.blog .post .date {
-	font-size:12px;
-	color:#000;
-	margin-top:10px;
-	color:#666;
-	text-align:left
-}
-.blog .quote-post h2 {
-	text-align:center;
-	font-weight:bold
-}
-.blog .quote-post p {
-	color:#999
-}
-
-
-
-/* [[[ Blog Single ]]] */
-.blog-single .desc {
-	text-align:justify
-}
-.comments {
-}
-.comments {
-	width:100%;
-	text-align:left
-}
-.comments .comments-title {
-	margin-bottom:20px;
-}
-.comments li {
-	margin:5px 0px;
-	float:left
-}
-.comments-container {
-	margin-bottom:10px;
-}
-.comments input {
-	width:100%;
-	text-align:left;
-	margin-bottom:10px;
-}
-.comments textarea {
-	width:100%;
-	text-align:left;
-	margin-bottom:10px;
-}
-.comments .comment-gravatar {
-	float:left;
-	max-width:60px;
-}
-.comments .comment-content {
-	padding-left:80px;
-}
-.comments .comment-content .comment-author {
-	color:#000;
-}
-.comments .comment-content .comment-date {
-	font-size:12px;
-	color:#999;
-	margin-left:10px;
-}
-.comments .comment-content .comment-text {
-	color:#666;
-}
-.comments .comments-fields {
-}
-/* [[[ Contact ]]] */
-
-.contact .site-main .inner h2, p {
-	width:100%;
-	float:left;
-	text-align:left;
-}
-.contact .site-main .inner h2 {
-	padding-top:20px;
-}
-.contact input {
-	width:100%;
-	margin:5px 0
-}
-.contact textarea {
-	width:100%;
-	margin:5px 0
-}
-.contact textarea {
-	height:120px;
-}
-.contact .btn {
-	margin:5px 0;
-	float:left
-}
-.contact .map {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
-}
-.contact .map iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
-.contact .address {
-	float:left;
-	margin:10px 0 0 0;
-}
 
 
 /* [[[ Shortcodes ]]] */
-.shortcodes .site-main { text-align:left }
-.shortcodes .btn { margin-bottom:4px }
-.shortcodes h4 { float:left; width:100%; margin-top:40px; }
-.shortcodes h5 { float:left; width:100%; margin-top:30px; }
+.all-members .site-main { text-align:left }
+.all-members .btn { margin-bottom:4px }
+.all-members h4 { float:left; width:100%; margin-top:40px; }
+.all-members h5 { float:left; width:100%; margin-top:30px; }
+
+#myInput {
+    background-image: url(./images/searchicon.png); /* 搜索按钮 */
+    background-position: 10px 12px; /* 定位搜索按钮 */
+    background-repeat: no-repeat; /* 不重复图片 */
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px; 
+}
+
+
+#table tr.header {
+    /* 表头添加背景 */
+    background-color: #f1f1f1;
+}
+#table tr:hover {
+    /* 鼠标移动过 tr 时添加背景 */
+    background-color: #f1f1f1;
+}
+
 
 /* Tabs */
 .tab-content { margin:10px 0px; text-align:justify }
@@ -378,7 +234,6 @@ svg {
 
 
 
-
 /* Alerts */
 .alert { padding:10px; border-radius:2px }
 .alert.bg-primary { background-color:#5e84a5 }
@@ -394,26 +249,8 @@ svg {
 
 
 
-#myInput {
-    background-image: url(./images/searchicon.png); /* 搜索按钮 */
-    background-position: 10px 12px; /* 定位搜索按钮 */
-    background-repeat: no-repeat; /* 不重复图片 */
-    width: 100%;
-    font-size: 16px;
-    padding: 12px 20px 12px 40px;
-    border: 1px solid #ddd;
-    margin-bottom: 12px; 
-}
 
 
-#table tr.header {
-    /* 表头添加背景 */
-    background-color: #f1f1f1;
-}
-#table tr:hover {
-    /* 鼠标移动过 tr 时添加背景 */
-    background-color: #f1f1f1;
-}
 
 
 /* TR Shortcodes */
@@ -467,9 +304,6 @@ svg {
 .widget.testimonials .carousel-control {  margin:30px; position:inherit; position:relative; top:20px; }
 .widget.testimonials {}
  
-/* [[[ About ]]] */
-
-.about h2{ text-align:left }
 
 
 
