@@ -202,12 +202,50 @@ svg {
 
 
 #table tr.header {
-    /* 表头添加背景 */
+     表头添加背景 
     background-color: #f1f1f1;
 }
-#table tr:hover {
+tbody tr:hover {
     /* 鼠标移动过 tr 时添加背景 */
     background-color: #f1f1f1;
+}
+
+/*table.tablesorter{
+    font-family: arial;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
+}*/
+/*表头的样式*/
+
+thead{
+background:#ccc;
+color:#ff0000;
+}
+.header{
+    background-image: url(./images/bg.gif);
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+/*降序时样式*/
+.tablesorter-headerDesc{
+/* color:#00ff00;
+ background-color: #aaa;*/
+ background-image: url(./images/desc.gif);
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}
+
+/*升序时样式*/
+.tablesorter-headerAsc{
+/* color:#0000ff;
+  background-color: #aaa;*/
+ background-image: url(./images/asc.gif);
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
 }
 
 

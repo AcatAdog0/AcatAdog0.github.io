@@ -1,0 +1,43 @@
+/*
+* @Author: 刘炎
+* @Date:   2019-07-23 19:19:39
+* @Last Modified by:   刘炎
+* @Last Modified time: 2019-07-23 19:19:51
+*/
+
+table.tablesorter{
+    font-family: arial;
+    font-size: 8pt;
+    width: 100%;
+    text-align: left;
+}
+/*表头的样式*/
+thead{
+background:#ccc;
+color:#ff0000;
+}
+ .header{
+    background-image: url('../plugin/tablesorter/themes/blue/bg.gif');
+    background-repeat: no-repeat;
+    background-position: center right;
+    cursor: pointer;
+}
+/*降序时样式*/
+th.headerSortDown{
+ color:#00ff00;
+ background-color: #aaa;
+ background-image: url('../plugin/tablesorter/themes/blue/desc.gif');
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}
+
+/*升序时样式*/
+th.headerSortUp{
+ color:#0000ff;
+  background-color: #aaa;
+ background-image: url('../plugin/tablesorter/themes/blue/asc.gif');
+ background-repeat: no-repeat;
+ background-position: center right;
+ cursor: pointer;
+}

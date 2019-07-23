@@ -10,6 +10,7 @@
 	  <meta name="keywords" content="" />
 	  <meta name="description" content="" />
     <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <!-- <script src="js/jQuery/jquery-2.0.2.min.js"></script> -->
     
     <!-- Favicon --> 
 	  <!-- <link rel="shortcut icon" href="images/favicon.ico"> -->
@@ -18,12 +19,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">  
 
 
     <style>
     /* 高亮搜索框 */
     td.alt { background-color: #eaeaea; background-color: rgba(234, 234, 234, 1);}
+    th {
+        color: rgba(0,0,0,1);
+        cursor: pointer;
+    }
+    .arrow {
+        display: inline-block;
+        vertical-align: middle;
+        width: 0;
+        height: 0;
+        margin-left: 4px;
+        opacity: 1;
+    }
+
+    .arrow.asc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 4px solid #000;
+    }
+
+    .arrow.dsc {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-top: 4px solid #000;
+    }
     </style>
 </head>
 
@@ -47,8 +72,12 @@
     <div class="site-menu">
     	<div class="icon"></div>
         <div class="menu">
+          <!--多页面对数据进行简单分类-->
             <ul>
                 <li><a href="index.html">Members</a></li>
+                <li><a href="additional23.html">Additional</a></li>
+                <li><a href="candidate.html">Candidate</a></li>
+                <li><a href="all.html">All</a></li>
             </ul>
         </div>
     </div>
@@ -66,7 +95,7 @@
     <div class="site-footer">
 
     
-    	<p>© 2019 lyzzy</p>
+    	<p>© 2019 ITAP</p>
     </div>
     <!-- \ Site Footer -->
     
@@ -84,151 +113,735 @@
 <input type="search" id="myInput" placeholder="SEARCH...">
             <!-- / Table -->
             <!--<h4>Table</h4> -->
-            <table id="table" class="table" width="1500px">
+            <table id="table" class="table tablesorter" width="1500px">
             <!--  <caption>Optional table caption goes here.</caption> -->
               <thead>
                 <tr>
-                  <th style="width: 50px">ID</th>
-                  <th style="width: 250px">Name</th>
-                  <th style="width: 600px">Research Topics</th>
-                  <th style="width: 200px">Institution</th>
-                  <th style="width: 220px">Email</th>
-                  <th>Title</th>
+                    
+                    <th class="header" style="width: 70px ">ID</th>
+                    <th class="header" style="width: 200px">Name</th>
+                    <th class="header" style="width: 500px">Research Topics</th>
+                    <th class="header" style="width: 200px">Institution</th>
+                    <th class="header" style="width: 220px">Email</th>
+                    <th class="header">Title</th>
                 </tr>
               </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">1</th>
-                  <td><a href="https://www.cityu.edu.hk/seem/meachan/" style="text-decoration:underline;color: #000" target="_blank">Alan H.S. Chan</a></td>
-                  <td>● Human Factors and Ergonomics<br/>● Safety and Health</td>
-                  <td>City University of Hong Kong</td>
-                  <td>alan.chan@cityu.edu.hk</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">2</th>
-                  <td><a href="https://faculty.erau.edu/Alex.Chaparro" style="text-decoration:underline;color: #000" target="_blank">Alex Chaparro</a></td>
-                  <td>● Driving<br/>● Perception<br/>● Human Factors</td>
-                  <td>Embry-Riddle Aeronautical University</td>
-                  <td>Alex.Chaparro@erau.edu</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">3</th>
-                  <td><a href="http://condor.depaul.edu/astuhlma/" style="text-decoration:underline;color: #000" target="_blank">Alice F. Stuhlmacher</a></td>
-                  <td>● Industrial-Organizational Psychology</td>
-                  <td>DePaul University</td>
-                  <td>astuhlma@depaul.edu</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">4</th>
-                  <td><a href="https://scholar.google.de/citations?user=v73Ej1QAAAAJ&hl=en" target="_blank" style="text-decoration:underline;color: #000" >Alvaro Taveira</a></td>
-                  <td></td>
-                  <td>University of Wisconsin–Whitewater, Whitewater, USA</td>
-                  <td>taveiraa@uww.edu</td>
-                  <td>Professor & Chair at University of Wisconsin - Whitewater</td>
-                </tr>
-                <tr>
-                  <th scope="row">5</th>
-                  <td><a href="https://www.fdv.uni-lj.si/en/news-and-information/contacts/teachers/info/andraz-petrovcic/" style="text-decoration:underline;color: #000" target="_blank">Andraž Petrovčič</a></td>
-                  <td>● ICT & aging<br/>● Gerontechnology<br/>● Mobile usability<br/>● Internet Studies<br/>● Survey Methodology</td>
-                  <td>University of Ljubljana Faculty of Social Sciences Centre for Social Informatics</td>
-                  <td>Andraz.Petrovcic@fdv.uni-lj.si</td>
-                  <td>Assistant Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">6</th>
-                  <td><a href="https://www.researchgate.net/profile/Andrea_Bosco" style="text-decoration:underline;color: #000" target="_blank">Andrea Bosco</a></td>
-                  <td>● Spatial cognition<br/>● Spatial memory<br/>● Spatial mental representation<br/>● Navigation<br/>● Topographical disorientation<br/>● Aging & spatial cognition<br/>● Neurodevelopmental and neurodegenerative diseases: Assessment & Interventions<br/>● Intervention in minimally conscious state<br/>● Psychological burden of caregivers, health / social workers</td>
-                  <td>University of Bari Aldo Moro</td>
-                  <td>a.bosco@psico.uniba.it</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">7</th>
-                  <td><a href="https://www.sfu.ca/gerontology/about/faculty-staff/andrew-sixsmith.html" style="text-decoration:underline;color: #000" target="_blank">Andrew Sixsmith</a></td>
-                  <td>● Health and quality of life of older people and the role of health and social care services<br/>● Strategic development of research in the area of technology for independent living.</td>
-                  <td>Simon Fraser University</td>
-                  <td>sixsmith@sfu.ca</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">8</th>
-                  <td><a href="https://www.lboro.ac.uk/departments/sbe/staff/emeritus/anne-morris/" style="text-decoration:underline;color: #000" target="_blank">Anne Morris</a></td>
-                  <td>● System usability<br/>● User evaluation of information systems<br/>● User information seeking behaviour<br/>● Research Methods</td>
-                  <td>Loughborough University</td>
-                  <td>a.morris@lboro.ac.uk</td>
-                  <td>Professor at Loughborough University</td>
-                </tr>
-                <tr>
-                  <th scope="row">9</th>
-                  <td><a href="https://www.researchgate.net/profile/Antonio_Teixeira4" style="text-decoration:underline;color: #000" target="_blank">António Teixeira</a></td>
-                  <td>● Software Development<br/>● Information Extraction<br/>● Human Machine Interaction<br/>● Computer Engineering</td>
-                  <td>University of Aveiro, Institute of Electronics and Telematics Engineering of Aveiro</td>
-                  <td>ajst@ua.pt</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">10</th>
-                  <td><a href="https://www.researchgate.net/profile/Bill_Kearns" style="text-decoration:underline;color: #000" target="_blank">Bill Kearns</a></td>
-                  <td>● Cognitive Neuroscience<br/>● Memory<br/>● Computational Intelligence<br/>● Cognitive Neuropsychology</td>
-                  <td>University of South Florida</td>
-                  <td>kearns@usf.edu</td>
-                  <td>Assistant professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">11</th>
-                  <td><a href="https://engineering.purdue.edu/Engr/People/NewFaculty/New_Faculty_2017/pitts.html" style="text-decoration:underline;color: #000" target="_blank">Brandon J. Pitts</a></td>
-                  <td>● Cognitive ergonomics<br/>● Human-automation interaction<br/>● Multimodal/multisensory information processing<br/>● Adaptive displays and aging and technology</td>
-                  <td>Purdue University</td>
-                  <td>bjpitts@purdue.edu</td>
-                  <td>Assistant professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">12</th>
-                  <td><a href="https://experts.mcmaster.ca/display/vrkljan" style="text-decoration:underline;color: #000" target="_blank">Brenda Vrkljan</a></td>
-                  <td>● Dr.Vrkljan’s research focus is on driver rehabilitation and community mobility across the lifespan, as well as technology use and participation in older adulthood.</td>
-                  <td>McMaster University</td>
-                  <td>vrkljan@mcmaster.ca</td>
-                  <td>Assistant professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">13</th>
-                  <td><a href="https://psy.fsu.edu/faculty/charnessn/charness.dp.php" style="text-decoration:underline;color: #000" target="_blank">Charness Neil </a></td>
-                  <td>● Human factors approaches to understanding aging and technology use<br/>● Older driver and pedestrian safety.</td>
-                  <td>Florida State University</td>
-                  <td>charness@psy.fsu.edu</td>
-                  <td>Professor of psychology</td>
-                </tr>
-                <tr>
-                  <th scope="row">14</th>
-                  <td><a href="https://cynthiabreazeal.media.mit.edu/" style="text-decoration:underline;color: #000" target="_blank">Cynthia Breazeal</a></td>
-                  <td>● Social Robotics<br/>● Human Robot Interaction</td>
-                  <td>MIT</td>
-                  <td>cynthiab@media.mit.edu </td>
-                  <td>Associate Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">15</th>
-                  <td><a href="http://destrin.smalldata.io/" style="text-decoration:underline;color: #000" target="_blank">Deborah Estrin</a></td>
-                  <td>● Mobile health<br/>● Personal informatics, and privacy</td>
-                  <td>Cornell University</td>
-                  <td>destrin@cs.cornell.edu</td>
-                  <td>Professor</td>
-                </tr>
-                <tr>
-                  <th scope="row">16</th>
-                  <td><a href="https://tarc.wsu.edu/corefaculty/dyck/" style="text-decoration:underline;color: #000" target="_blank">Dennis Dyck</a></td>
-                  <td>● Co-occurring Disorders<br/>● Affective Neuroscience<br/>● Addiction<br/>● Chronic Pain<br/>● Opiates<br/>● Cannabinoids<br/>● Clinical Trials</td>
-                  <td>Washington State University</td>
-                  <td>dyck@wsu.edu</td>
-                  <td>Professor</td>
-                </tr>
-              </tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td><a href="https://www.cityu.edu.hk/seem/meachan/" style="text-decoration:underline;color: #000" target="_blank">Alan H.S. Chan</a></td>
+                <td>● Human Factors and Ergonomics<br/>● Safety and Health</td>
+                <td>City University of Hong Kong</td>
+                <td>alan.chan@cityu.edu.hk</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td><a href="https://faculty.erau.edu/Alex.Chaparro" style="text-decoration:underline;color: #000" target="_blank">Alex Chaparro</a></td>
+                <td>● Driving<br/>● Perception<br/>● Human Factors</td>
+                <td>Embry-Riddle Aeronautical University</td>
+                <td>Alex.Chaparro@erau.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td><a href="http://condor.depaul.edu/astuhlma/" style="text-decoration:underline;color: #000" target="_blank">Alice F. Stuhlmacher</a></td>
+                <td>● Industrial-Organizational Psychology</td>
+                <td>DePaul University</td>
+                <td>astuhlma@depaul.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td><a href="https://scholar.google.de/citations?user=v73Ej1QAAAAJ&hl=en" target="_blank" style="text-decoration:underline;color: #000" >Alvaro Taveira</a></td>
+                <td></td>
+                <td>University of Wisconsin–Whitewater, Whitewater, USA</td>
+                <td>taveiraa@uww.edu</td>
+                <td>Professor & Chair at University of Wisconsin - Whitewater</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td><a href="https://www.fdv.uni-lj.si/en/news-and-information/contacts/teachers/info/andraz-petrovcic/" style="text-decoration:underline;color: #000" target="_blank">Andraž Petrovčič</a></td>
+                <td>● ICT & aging<br/>● Gerontechnology<br/>● Mobile usability<br/>● Internet Studies<br/>● Survey Methodology</td>
+                <td>University of Ljubljana Faculty of Social Sciences Centre for Social Informatics</td>
+                <td>Andraz.Petrovcic@fdv.uni-lj.si</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td><a href="https://www.researchgate.net/profile/Andrea_Bosco" style="text-decoration:underline;color: #000" target="_blank">Andrea Bosco</a></td>
+                <td>● Spatial cognition<br/>● Spatial memory<br/>● Spatial mental representation<br/>● Navigation<br/>● Topographical disorientation<br/>● Aging & spatial cognition<br/>● Neurodevelopmental and neurodegenerative diseases<br/>● Assessment & Interventions<br/>● Intervention in minimally conscious state<br/>● Psychological burden of caregivers, health / social workers</td>
+                <td>University of Bari Aldo Moro</td>
+                <td>a.bosco@psico.uniba.it</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td><a href="https://www.sfu.ca/gerontology/about/faculty-staff/andrew-sixsmith.html" style="text-decoration:underline;color: #000" target="_blank">Andrew Sixsmith</a></td>
+                <td>● Health and quality of life of older people and the role of health and social care services<br/>● Strategic development of research in the area of technology for independent living.</td>
+                <td>Simon Fraser University</td>
+                <td>sixsmith@sfu.ca</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td><a href="https://www.lboro.ac.uk/departments/sbe/staff/emeritus/anne-morris/" style="text-decoration:underline;color: #000" target="_blank">Anne Morris</a></td>
+                <td>● System usability<br/>● User evaluation of information systems<br/>● User information seeking behaviour<br/>● Research Methods</td>
+                <td>Loughborough University</td>
+                <td>a.morris@lboro.ac.uk</td>
+                <td>Professor at Loughborough University</td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td><a href="https://www.researchgate.net/profile/Antonio_Teixeira4" style="text-decoration:underline;color: #000" target="_blank">António Teixeira</a></td>
+                <td>● Software Development<br/>● Information Extraction<br/>● Human Machine Interaction<br/>● Computer Engineering</td>
+                <td>University of Aveiro, Institute of Electronics and Telematics Engineering of Aveiro</td>
+                <td>ajst@ua.pt</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td><a href="https://www.researchgate.net/profile/Bill_Kearns" style="text-decoration:underline;color: #000" target="_blank">Bill Kearns</a></td>
+                <td>● Cognitive Neuroscience<br/>● Memory<br/>● Computational Intelligence<br/>● Cognitive Neuropsychology</td>
+                <td>University of South Florida</td>
+                <td>kearns@usf.edu</td>
+                <td>Assistant professor</td>
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td><a href="https://engineering.purdue.edu/Engr/People/NewFaculty/New_Faculty_2017/pitts.html" style="text-decoration:underline;color: #000" target="_blank">Brandon J. Pitts</a></td>
+                <td>● Cognitive ergonomics<br/>● Human-automation interaction<br/>● Multimodal/multisensory information processing<br/>● Adaptive displays and aging and technology</td>
+                <td>Purdue University</td>
+                <td>bjpitts@purdue.edu</td>
+                <td>Assistant professor</td>
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td><a href="https://experts.mcmaster.ca/display/vrkljan" style="text-decoration:underline;color: #000" target="_blank">Brenda Vrkljan</a></td>
+                <td>● Driver Rehabilitation<br/>● Technology use and participation in older adulthood</td>
+                <td>McMaster University</td>
+                <td>vrkljan@mcmaster.ca</td>
+                <td>Assistant professor</td>
+              </tr>
+              <tr>
+                <th scope="row">13</th>
+                <td><a href="https://psy.fsu.edu/faculty/charnessn/charness.dp.php" style="text-decoration:underline;color: #000" target="_blank">Charness Neil </a></td>
+                <td>● Human factors approaches to understanding aging and technology use<br/>● Older driver and pedestrian safety.</td>
+                <td>Florida State University</td>
+                <td>charness@psy.fsu.edu</td>
+                <td>Professor of psychology</td>
+              </tr>
+              <tr>
+                <th scope="row">14</th>
+                <td><a href="https://cynthiabreazeal.media.mit.edu/" style="text-decoration:underline;color: #000" target="_blank">Cynthia Breazeal</a></td>
+                <td>● Social Robotics<br/>● Human Robot Interaction</td>
+                <td>MIT</td>
+                <td>cynthiab@media.mit.edu </td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">15</th>
+                <td><a href="http://destrin.smalldata.io/" style="text-decoration:underline;color: #000" target="_blank">Deborah Estrin</a></td>
+                <td>● Mobile health<br/>● Personal informatics, and privacy</td>
+                <td>Cornell University</td>
+                <td>destrin@cs.cornell.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">16</th>
+                <td><a href="https://tarc.wsu.edu/corefaculty/dyck/" style="text-decoration:underline;color: #000" target="_blank">Dennis Dyck</a></td>
+                <td>● Co-occurring Disorders<br/>● Affective Neuroscience<br/>● Addiction<br/>● Chronic Pain<br/>● Opiates<br/>● Cannabinoids<br/>● Clinical Trials</td>
+                <td>Washington State University</td>
+                <td>dyck@wsu.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">17</th>
+                <td><a href="https://aisnet.org/members/?id=15139563" style="text-decoration:underline;color: #000" target="_blank">Donald V Kerr</a></td>
+                <td>● Information Technology<br/>● Information System Management<br/>● Business Analysis</td>
+                <td>University of the Sunshine Coast</td>
+                <td>dkerr@usc.edu.au</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">18</th>
+                <td><a href="https://scholar.google.es/citations?user=XTEUFX0AAAAJ&hl=zh-CN" style="text-decoration:underline;color: #000" target="_blank">Eduardo Carrasco</a></td>
+                <td>● e-Inclusion <br/>● e-Health<br/>● Human-Machine Interaction</td>
+                <td>IK4 & Biodonostia Health Research Institute</td>
+                <td>ecarrasco@vicomtech.org</td>
+                <td>Researcher</td>
+              </tr>
+              <tr>
+                <th scope="row">19</th>
+                <td><a href="https://www.uva.nl/en/profile/l/o/e.f.loos/e.f.loos.html" style="text-decoration:underline;color: #000" target="_blank">Eugene Loos</a></td>
+                <td>●The (ir)relevance of age for accessible (health) information<br/>● Digital sport games for senior citizens<br/>● ICT use in organizations</td>
+                <td>University of Amsterdam</td>
+                <td>University of Amsterdam</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">20</th>
+                <td><a href="http://unicatt.academia.edu/FaustoColombo/CurriculumVitae" style="text-decoration:underline;color: #000" target="_blank">Fausto Colombo</a></td>
+                <td>● Communication<br/>● Media Studies<br/>● Mass Communication<br/>● Social Networking</td>
+                <td>Catholic University of the Sacred Heart, Milan</td>
+                <td> fausto.colombo@unicatt.it</td>
+                <td>Professor of Media Theories and Media and Politics in the Faculty of Political Sciences</td>
+              </tr>
+              <tr>
+                <th scope="row">21</th>
+                <td><a href="https://www.uni-frankfurt.de/53895455/Oswald" style="text-decoration:underline;color: #000" target="_blank">Frank Oswald</a></td>
+                <td>● Alzheimer's Disease<br/>● Gerontology<br/>● Mild Cognitive<br/>● Impairment<br/>● Aging</td>
+                <td>Goethe University</td>
+                <td>oswald@em.uni-frankfurt.de</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">22</th>
+                <td><a href="https://scholar.google.com/citations?user=8GusQd0AAAAJ&hl=en" style="text-decoration:underline;color: #000" target="_blank">Gavin W Hougham</a></td>
+                <td>● Medical Sociology<br/>● Health Outcomes Research<br/>● Social Sequence Analysis<br/>● Social Network Analysis</td>
+                <td>Battelle Memorial Institute</td>
+                <td>hougham@battelle.org</td>
+                <td>Site Director</td>
+              </tr>
+              <tr>
+                <th scope="row">23</th>
+                <td><a href="http://faculty.washington.edu/gdemiris/" style="text-decoration:underline;color: #000" target="_blank">George Demiris</a></td>
+                <td>● Biomedical Informatics<br/>● Aging<br/>● Consumer Health Informatics<br/>● Family Caregiving<br/>● Hospice</td>
+                <td>University of Washington</td>
+                <td>gdemiris@uw.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">24</th>
+                <td><a href="https://ischool.umd.edu/faculty-staff/gregg-vanderheiden" style="text-decoration:underline;color: #000" target="_blank">Gregg Vanderheiden</a></td>
+                <td>● HCI<br/>● Accessibility<br/>● Universal /Inclusive Design<br/>● Disability<br/>● Aging</td>
+                <td>UW Madison</td>
+                <td>gv@trace.wisc.edu</td>
+                <td>Director, Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">25</th>
+                <td><a href="https://www.xjtlu.edu.cn/en/departments/academic-departments/computer-science-and-software-engineering/staff/hai-ning-liang" style="text-decoration:underline;color: #000" target="_blank">Hai-Ning Liang</a></td>
+                <td>● HCI<br/>● Information Visualization<br/>● Learning/Educational Technologies<br/>● Mobile, Collaborative, and Gaming Technologies</td>
+                <td>Xi'an Jiaotong-Liverpool University</td>
+                <td>HaiNing.Liang@xjtlu.edu.cn</td>
+                <td> associate professor in the department of computer science and the deputy director of our research institute on ageing and society.</td>
+              </tr>
+              <tr>
+                <th scope="row">26</th>
+                <td><a href="https://www.psy.cuhk.edu.hk/index.php/?option=com_sppagebuilder&view=page&id=103" style="text-decoration:underline;color: #000" target="_blank">Helene Fung</a></td>
+                <td>● Cognition<br/>● Aging<br/>● Social Relationships</td>
+                <td>Chinese University of Hong Kong</td>
+                <td>hhlfung@psy.cuhk.edu.hk</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">27</th>
+                <td><a href="https://bouve.northeastern.edu/bchs/directory/holly-jimison-2/" style="text-decoration:underline;color: #000" target="_blank">Holly Brugge Jimison</a></td>
+                <td>● Health Coaching<br/>● Aging<br/>● Health Informatics<br/>● Medical Decision Making<br/>● Computational Models</td>
+                <td>Northeastern University</td>
+                <td>h.jimison@northeastern.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">28</th>
+                <td><a href="http://ice.ssdpp.fudan.edu.cn/%E9%99%88%E8%99%B9%E9%9C%96/" style="text-decoration:underline;color: #000" target="_blank">Honglin Chen</a></td>
+                <td>● Social Capital<br/>● Ageing</td>
+                <td>Fudan University</td>
+                <td>chl@fudan.edu.cn</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">29</th>
+                <td><a href="http://tjdi.tongji.edu.cn/TeacherDetail.do?id=3840&lang=_en" style="text-decoration:underline;color: #000" target="_blank">Hua Dong</a></td>
+                <td>● People-Centred Design</td>
+                <td>Tongji University</td>
+                <td> </td>
+                <td>Professor at the College of Design and Innovation</td>
+              </tr>
+              <tr>
+                <th scope="row">30</th>
+                <td><a href="https://www.researchgate.net/profile/Jan_Bobeth" style="text-decoration:underline;color: #000" target="_blank">Jan Bobeth</a></td>
+                <td>● User Experience<br/>● Usability<br/>● Human-Computer Interaction</td>
+                <td>AIT Austrian Institute of Technology, Vienna</td>
+                <td>Jan.Bobeth@ait.ac.at</td>
+                <td>Scientist</td>
+              </tr>
+              <tr>
+                <th scope="row">31</th>
+                <td><a href="https://www.univ-tlse2.fr/jean-claude-marquie-69167.kjsp" style="text-decoration:underline;color: #000" target="_blank">Jean-Claude Marquie</a></td>
+                <td>● Neuroergonomics<br/>● Cognition<br/>● Aging</td>
+                <td>University of Toulouse II & CNRS</td>
+                <td>marquie@univ-tlse2.fr</td>
+                <td>CNRS Research Director</td>
+              </tr>
+              <tr>
+                <th scope="row">32</th>
+                <td><a href="https://psyc.ucalgary.ca/profiles/jeff-k-caird" style="text-decoration:underline;color: #000" target="_blank">Jeff K. Caird</a></td>
+                <td>● Aging<br/>● Healthcare Human Factors<br/>● Patient Safety<br/>● Tranportation Human Factors<br/>● Traffic Safety</td>
+                <td>University of Calgary</td>
+                <td>jkcaird@ucalgary.ca</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">33</th>
+                <td><a href="https://www.ohsu.edu/people/jeffrey-kaye/30278BDAE91047AC964245DF14AA6D30" style="text-decoration:underline;color: #000" target="_blank">Jeffrey Kaye</a></td>
+                <td>● Alzheimer Disease<br/>● Cognition<br/>● Brain</td>
+                <td>Oregon Health & Science University</td>
+                <td>kaye@ohsu.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">34</th>
+                <td><a href="https://sc.edu/study/colleges_schools/engineering_and_computing/faculty-staff/jenaybeer.php" style="text-decoration:underline;color: #000" target="_blank">Jenay Beer</a></td>
+                <td>● Robot Autonomy<br/>● Aging<br/>● Home Healthcare</td>
+                <td>University of South Carolina</td>
+                <td>jbeer@cec.sc.edu</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">35</th>
+                <td><a href="https://scholar.google.com/citations?user=8QP8RgsAAAAJ&hl=en" style="text-decoration:underline;color: #000" target="_blank">Jesús Favela</a></td>
+                <td>● Human-Computer Interaction<br/>● Ubiquitous Computing<br/>● Artificial Intelligence</td>
+                <td>Department of Computer Science CICESE Ensenada, Mexico</td>
+                <td>favela@cicese.mx</td>
+                <td>Professor, head of the Mobile and Ubiquitous Computing Healthcare Laboratory</td>
+              </tr>
+              <tr>
+                <th scope="row">36</th>
+                <td><a href="https://www.researchgate.net/profile/Jiunn_Woei_allen_Lian" style="text-decoration:underline;color: #000" target="_blank">Jiunn-Woei (Allen) Lian</a></td>
+                <td>● Information Technology<br/>● Information Management</td>
+                <td>National Taichung University of Science and Technology</td>
+                <td>jwlian@nutc.edu.tw</td>
+                <td>Assistant professor</td>
+              </tr>
+              <tr>
+                <th scope="row">37</th>
+                <td><a href="https://www.researchgate.net/profile/Joan_Hyde" style="text-decoration:underline;color: #000" target="_blank">Joan Hyde</a></td>
+                <td>● Gerontology</td>
+                <td>University of Massachusetts Boston</td>
+                <td>joan.hyde@umb.edu</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <th scope="row">38</th>
+                <td><a href="https://www.researchgate.net/profile/John_Gaspar" style="text-decoration:underline;color: #000" target="_blank">John G. Gaspar</a></td>
+                <td>● Sport Training<br/>● Athletics<br/>● Virtual Worlds</td>
+                <td>University of Iowa</td>
+                <td>john-gaspar@uiowa.edu</td>
+                <td>Researcher</td>
+              </tr>
+              <tr>
+                <th scope="row">39</th>
+                <td><a href="https://pure.ulster.ac.uk/en/persons/jonathan-wallace" style="text-decoration:underline;color: #000" target="_blank">Jonathan Wallace</a></td>
+                <td>● Information Technology<br/>● Healthcare Informatics</td>
+                <td>University of Ulster</td>
+                <td>jg.wallace@ulster.ac.uk</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">40</th>
+                <td><a href="https://miami.pure.elsevier.com/en/persons/joseph-sharit" style="text-decoration:underline;color: #000" target="_blank">Joseph Sharit</a></td>
+                <td>● Aging<br/>● Internet Health</td>
+                <td>University of Miami</td>
+                <td>jsharit@miami.edu</td>
+                <td>Research Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">41</th>
+                <td><a href="https://research.monash.edu/en/persons/judith-charlton" style="text-decoration:underline;color: #000" target="_blank">Judith Charlton</a></td>
+                <td>● Order Drivers<br/>● Fitness-to-drive<br/>● Child Safety</td>
+                <td>Monash University</td>
+                <td>Judith.Charlton@monash.edu</td>
+                <td> Director of the Monash Injury Research Institute (MIRI) and Monash University Accident Research Centre (MUARC) in Melbourne Australia</td>
+              </tr>
+              <tr>
+                <th scope="row">42</th>
+                <td><a href="http://www.massey.ac.nz/massey/expertise/profile.cfm?stref=076230" style="text-decoration:underline;color: #000" target="_blank">Juliana Mansvelt</a></td>
+                <td>● Aging and Place<br/>● Consumption</td>
+                <td>Massey University</td>
+                <td>J.R.Mansvelt@massey.ac.nz</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">43</th>
+                <td><a href="https://www.ohio.edu/chsp/brownj14" style="text-decoration:underline;color: #000" target="_blank">Julie A. Brown</a></td>
+                <td>● Gerontology</td>
+                <td>Ohio University</td>
+                <td>brownj14@ohio.edu</td>
+                <td>Asst. Professor of Gerontology Dept. of Social & Public Health</td>
+              </tr>
+              <tr>
+                <th scope="row">44</th>
+                <td><a href="https://chip.uconn.edu/person/julie-robison-phd/#" style="text-decoration:underline;color: #000" target="_blank">Julie Robison</a></td>
+                <td>● Long Term Services and Supports (LTSS)</td>
+                <td>University of Connecticut</td>
+                <td>jrobison@uchc.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">45</th>
+                <td><a href="https://connects.catalyst.harvard.edu/Profiles/display/Person/133298" style="text-decoration:underline;color: #000" target="_blank">Junhong Zhou</a></td>
+                <td>● Aging<br/>● Non-Invasive Brain Stimulation<br/>● Gait Disorder<br/>● Sensorimotor<br/>● Mobility and Balance</td>
+                <td>Harvard Medical School</td>
+                <td>JunhongZhou@hsl.harvard.edu.</td>
+                <td>Assistant Scientist</td>
+              </tr>
+              <tr>
+                <th scope="row">46</th>
+                <td><a href="http://www.karenrenaud.com/" style="text-decoration:underline;color: #000" target="_blank">Karen Renaud</a></td>
+                <td>● Usable Security<br/>● Mental Models<br/>● Mobile Phone Usage by the Elderly<br/>● Knowledge Visualization<br/>● Security Awareness<br/>● Access Control for Children</td>
+                <td>University of Glasgow</td>
+                <td>Karen.Renaud@glasgow.ac.uk</td>
+                <td>Senior Lecturer (Computing Science)</td>
+              </tr>
+              <tr>
+                <th scope="row">47</th>
+                <td><a href="https://www.neura.edu.au/staff/dr-kim-delbaere/" style="text-decoration:underline;color: #000" target="_blank">Kim Delbaere</a></td>
+                <td>● Falls in older people</td>
+                <td>Neuroscience Research Australia, University of New South Wales</td>
+                <td>k.delbaere@neura.edu.au</td>
+                <td>Research Fellow and Group Leader</td>
+              </tr>
+              <tr>
+                <th scope="row">48</th>
+                <td><a href="https://sites.google.com/umich.edu/lisa-j-molnar/home" style="text-decoration:underline;color: #000" target="_blank">Lisa J. Molnar</a></td>
+                <td>● Driving Safety<br/>● Adolescent Driving Behavior<br/>● Older Driver Safety and Mobility</td>
+                <td>University of Michigan</td>
+                <td>ljmolnar@umich.edu</td>
+                <td>Associate Research Scientis</td>
+              </tr>
+              <tr>
+                <th scope="row">49</th>
+                <td><a href="https://www.usfca.edu/faculty/lisa-wagner" style="text-decoration:underline;color: #000" target="_blank">Lisa Wagner</a></td>
+                <td>● Stereotyping and Prejudice<br/>● Aging and Diversity</td>
+                <td>University of San Francisco</td>
+                <td>wagnerl@usfca.edu</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">50</th>
+                <td><a href="http://hulat.inf.uc3m.es/nosotros/miembros/lmoreno" style="text-decoration:underline;color: #000" target="_blank">Lourdes Moreno Lopez</a></td>
+                <td>● Web Accessibility<br/>● Accessible user interfaces<br/>● Mobile Accessibility</td>
+                <td>Universidad Carlos III de Madrid</td>
+                <td>lmoreno@inf.uc3m.es</td>
+                <td>Assitant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">51</th>
+                <td><a href="https://www.researchgate.net/profile/Marc-Eric_Bobillier_Chaumon" style="text-decoration:underline;color: #000" target="_blank">Marc-Eric Bobillier Chaumon</a></td>
+                <td>● Information and Communication Technology<br/>● User Experience<br/>● Work Psychology<br/>● Change Management</td>
+                <td>Université Lumiere Lyon 2</td>
+                <td>marc-eric.bobillier-chaumon@univ-lyon2.fr</td>
+                <td>Director</td>
+              </tr>
+              <tr>
+                <th scope="row">52</th>
+                <td><a href="https://www.sics.se/people/marie-sjolinder" style="text-decoration:underline;color: #000" target="_blank">Marie Sjölinder</a></td>
+                <td>● Human-Computer Interaction<br/>● User Behaviour<br/>● Aging</td>
+                <td>Swedish Institute of Computer Science</td>
+                <td>marie@sics.se</td>
+                <td>Researcher</td>
+              </tr>
+              <tr>
+                <th scope="row">53</th>
+                <td><a href="https://scholar.google.fi/citations?user=U1qDp1IAAAAJ&hl=fi" style="text-decoration:underline;color: #000" target="_blank">Markku Tukiainen</a></td>
+                <td>● HCI<br/>● Software Engineering</td>
+                <td>University of Eastern Finland</td>
+                <td>markku.rukiainen@uef.fi</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">54</th>
+                <td><a href="https://www.researchgate.net/profile/Markus_Vincze" style="text-decoration:underline;color: #000" target="_blank">Markus Vincze</a></td>
+                <td>● Computer Vision<br/>● Robotics<br/>● Automation & Robotics<br/>● Automation</td>
+                <td>TU Wien</td>
+                <td>mvincze@acin.tuwien.ac.at</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">55</th>
+                <td><a href="http://www.isk.rwth-aachen.de/Ziefle" style="text-decoration:underline;color: #000" target="_blank">Martina Ziefle</a></td>
+                <td>● Human-Computer Interaction<br/>● Technology Acceptance<br/>● Social Media<br/>● Smart Environments<br/>● User Diversity</td>
+                <td>RWTH Aachen University</td>
+                <td>ziefle@comm.rwth-aachen.de</td>
+                <td>Professor,  Head of the eHealth Research group at the Human Technology Centre</td>
+              </tr>
+              <tr>
+                <th scope="row">56</th>
+                <td><a href="https://www.researchgate.net/profile/Maryalice_Citera" style="text-decoration:underline;color: #000" target="_blank">Maryalice Citera</a></td>
+                <td>● Management<br/>● Leadership<br/>● Human Resource Management<br/>● Organizational Theory</td>
+                <td>State University of New York at New Paltz</td>
+                <td>citeram@matrix.newpaltz.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">57</th>
+                <td><a href="https://psychology.wsu.edu/people/faculty/maureen-schmitter-edgecombe/" style="text-decoration:underline;color: #000" target="_blank">Maureen Schmitter-Edgecombe</a></td>
+                <td>● Neuropsychology and Aging<br/>● Smart Environment<br/>● Aging Assistive Technology</td>
+                <td>Washington State University</td>
+                <td>schmitter-e@wsu.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">58</th>
+                <td><a href="https://oraas0.ied.edu.hk/rich/web/people_details.jsp?pid=107283" style="text-decoration:underline;color: #000" target="_blank">Maureen Tam</a></td>
+                <td>● Teaching and Learning<br/>● Pedagogy and Education<br/>● Technology Enhanced Learning</td>
+                <td>Education University of Hong Kong</td>
+                <td>msltam@eduhk.hk</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">59</th>
+                <td><a href="https://www.monmouth.edu/directory/profiles/michele-van-volkom/" style="text-decoration:underline;color: #000" target="_blank">Michele Van Volkom</a></td>
+                <td>● Generational and sex differences in the use of and attitudes toward technology<br/>● Sibling relationships in adulthood</td>
+                <td>Monmouth University</td>
+                <td>mvanvolk@monmouth.edu</td>
+                <td>Lecturer</td>
+              </tr>
+              <tr>
+                <th scope="row">60</th>
+                <td><a href="http://www.communicationchange.net/en/mireia-fernandez-ardevol/" style="text-decoration:underline;color: #000" target="_blank">Mireia Fernández-Ardèvol</a></td>
+                <td>● Mobile Communication<br/>● The analysis of the contribution of mobile communication to development, poverty reduction and democratization processes</td>
+                <td>University of Barcelona</td>
+                <td>mfernandezar@uoc.edu</td>
+                <td>Senior Researcher and co-director of the research group "Mobile Technologies and (G)Local Challenges</td>
+              </tr>
+              <tr>
+                <th scope="row">61</th>
+                <td><a href="https://faculty.ksu.edu.sa/mahossain/home" style="text-decoration:underline;color: #000" target="_blank">Mohammad Anwar Hossain</a></td>
+                <td>● Multimedia Surveillance<br/>● Internet of Things</td>
+                <td>King Saud University</td>
+                <td>mahossain@ksu.edu.sa</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">62</th>
+                <td><a href="http://www.wkwsci.ntu.edu.sg/Pages/Assistant-Professor-Natalie-PANG-Lee-San.aspx" style="text-decoration:underline;color: #000" target="_blank">Natalie Pang</a></td>
+                <td>● Social Informatics<br/>● The media behaviour in the contexts of uncertainty and disruptions<br/>● The participatory documentation and archival of social media</td>
+                <td>Nanyang Technological University</td>
+                <td>NLSPANG@NTU.EDU.SG</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">63</th>
+                <td><a href="https://www.researchgate.net/profile/Nathalie_Bier" style="text-decoration:underline;color: #000" target="_blank">Nathalie Bier</a></td>
+                <td>● Cognitive Neuroscience<br/>● Memory<br/>● Cognitive<br/>● Neuropsychology<br/>● Alzheimer's Disease</td>
+                <td>Université de Montréal</td>
+                <td>nathalie.bier@umontreal.ca</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">64</th>
+                <td><a href="https://psy.fsu.edu/faculty/charnessn/charness.dp.php" style="text-decoration:underline;color: #000" target="_blank">Neil Charness</a></td>
+                <td>● Human factors approaches to understanding aging and technology use<br/>● Older driver and pedestrian safety</td>
+                <td>Florida State University</td>
+                <td>charness@psy.fsu.edu</td>
+                <td>Professor of psychology</td>
+              </tr>
+              <tr>
+                <th scope="row">65</th>
+                <td><a href="http://medphys.med.auth.gr/user/panagiotis-bamidis" style="text-decoration:underline;color: #000" target="_blank">Panagiotis Bamidis</a></td>
+                <td>● Technology enhanced learning in Medical Education<br/>● Affective and Applied Neuroscience<br/>● Multimodal Interaction<br/>● HCI</td>
+                <td>ab of Medical Physics of AUTH’s Medical School</td>
+                <td>pdbamidis@gmail.com</td>
+                <td>Active and Healthy Ageing living labs</td>
+              </tr>
+              <tr>
+                <th scope="row">66</th>
+                <td><a href="https://scholar.google.com/citations?user=cqa63CwAAAAJ&hl=en" style="text-decoration:underline;color: #000" target="_blank">Patrice Terrier</a></td>
+                <td>● Cognitive Ergonomics<br/>● Memory<br/>● Consciousness</td>
+                <td>Université de Toulouse & CNRS</td>
+                <td>terrier@univ-tlse2.fr</td>
+                <td>Full Professor in Cognitive Ergonomics (or Human Factors). Managing the Human System Compatibility Group at CLLE Laboratory (Univ. Toulouse 2 & CNRS). Co-heading the Doctoral College in Aeronautics and Astronautics (Univ. Toulouse)</td>
+              </tr>
+              <tr>
+                <th scope="row">67</th>
+                <td><a href="http://oxford.academia.edu/PatrickRabbitt" style="text-decoration:underline;color: #000" target="_blank">Patrick Rabbitt</a></td>
+                <td>● Experimental Psychology</td>
+                <td>University of Oxford</td>
+                <td>patrick.rabbitt@psy.ox.ac.uk</td>
+                <td>Academy of Europe</td>
+              </tr>
+              <tr>
+                <th scope="row">68</th>
+                <td><a href="https://scholar.google.com/citations?user=WH6emMQAAAAJ&hl=en" style="text-decoration:underline;color: #000" target="_blank">Richard J. Holden</a></td>
+                <td>● Human Factors<br/>● Healthcare Quality and Safety<br/>● Health Information Technol</td>
+                <td>Indiana University School of Informatics and Computing</td>
+                <td>rjholden@iupui.edu</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">69</th>
+                <td><a href="https://blogs.clemson.edu/catlab/people/richard-pak/" style="text-decoration:underline;color: #000" target="_blank">Richard Pak</a></td>
+                <td>● Age-related changes in cognitive abilities<br/>● Human-Automation Interaction<br/>● Human-Robot Interaction<br/>● HCI<br/>● Anthropomorphic Interfaces</td>
+                <td>Clemson University</td>
+                <td>richpak@clemson.edu</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">70</th>
+                <td><a href="http://ron.taglab.ca/" style="text-decoration:underline;color: #000" target="_blank">Ronald M. Baecker</a></td>
+                <td>● HCI<br/>● User Interface<br/>● Software Visualization<br/>● Multimedia</td>
+                <td>University of Toronto</td>
+                <td>ron@taglab.ca</td>
+                <td>Director of the Technologies for Aging Gracefully Lab Bell Chair in Human-Computer Interaction</td>
+              </tr>
+              <tr>
+                <th scope="row">71</th>
+                <td><a href="https://engineering.virginia.edu/faculty/rosalyn-w-berne" style="text-decoration:underline;color: #000" target="_blank">Rosalyn Berne</a></td>
+                <td>● Science, Technology and Society</td>
+                <td>University of Virginia</td>
+                <td>RosalynWB@gmail.com</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">72</th>
+                <td><a href="https://ccs.miami.edu/sara-czaja-phd/" style="text-decoration:underline;color: #000" target="_blank">Sara Czaja</a></td>
+                <td>● Aging and Cognition<br/>● e-Health<br/>● Caregiving<br/>● HCI</td>
+                <td>University of Miami</td>
+                <td>sczaja@med.miami.edu</td>
+                <td>Professor, Department of Psychiatry & Behavioral Sciences, Co-Director, Center On Aging</td>
+              </tr>
+              <tr>
+                <th scope="row">73</th>
+                <td><a href="https://faculty.utah.edu/u0030087-Scott_Wright_PhD/research/index.hml" style="text-decoration:underline;color: #000" target="_blank">Scott D. Wright</a></td>
+                <td>● Autism Spectrum Disorders and adulthood and aging<br/>● Human Ecology</td>
+                <td>University of Utah</td>
+                <td>scott.wright@hsc.utah.edu</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">74</th>
+                <td><a href="https://www.researchgate.net/profile/Sergio_Sayago2" style="text-decoration:underline;color: #000" target="_blank">Sergio Sayago</a></td>
+                <td>● User Experience Usability<br/>● User Studies<br/>● Human Machine Interaction</td>
+                <td>Universitat de Barcelona</td>
+                <td>sergiosayago@ub.edu</td>
+                <td>Visiting Lecturer</td>
+              </tr>
+              <tr>
+                <th scope="row">75</th>
+                <td><a href="https://comartsci.msu.edu/our-people/shelia-r-cotten" style="text-decoration:underline;color: #000" target="_blank">Shellia Cotton</a></td>
+                <td>● Health impacts of technology<br/>● E-health<br/>● Aging and technology<br/>● Digital inequalities</td>
+                <td>Michigan State University</td>
+                <td>cotten@msu.edu</td>
+                <td>Professor, Associate Chairperson for Research, Department of Media and Information, Director of MSU-Sparrow Center for Innovation and Research (CFIR), Director of Trifecta</td>
+              </tr>
+              <tr>
+                <th scope="row">76</th>
+                <td><a href="https://www.eduhk.hk/hpe/view.php?secid=4781" style="text-decoration:underline;color: #000" target="_blank">Sheung-Tak Cheng</a></td>
+                <td>● Successful aging<br/>● Elderly depression and suicide<br/>● Dementia Caregivers<br/>● Social Network</td>
+                <td>The Education University of Hong Kong</td>
+                <td>takcheng@eduhk.hk</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">77</th>
+                <td><a href="http://www.swinburne.edu.au/health-arts-design/staff/profile/index.php?id=spedell" style="text-decoration:underline;color: #000" target="_blank">Sonja Pedell</a></td>
+                <td>● Design for Aging<br/>● Aged Care<br/>● Ergonomics and Aesthetics Design<br/>● Cognitive Models<br/>● Interaction Design<br/>● User-centred Design<br/>● Human Computer Interaction</td>
+                <td>Swinburne University of Technology</td>
+                <td>spedell@swin.edu.au</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">78</th>
+                <td><a href="https://users.soe.ucsc.edu/~srikur/" style="text-decoration:underline;color: #000" target="_blank">Sri Kurniawan</a></td>
+                <td>●HCI for people with special needs</td>
+                <td>University of California Santa Cruz</td>
+                <td>skurnia@ucsc.edu</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">79</th>
+                <td><a href="https://sociology.biu.ac.il/en/node/420" style="text-decoration:underline;color: #000" target="_blank">Tova Gamliel</a></td>
+                <td>● Cultural performances (traditional and daily ceremonies)<br/>● Anthropology of theater<br/>● Anthropology of emotions<br/>● Intergenerational relations<br/>● Internet and inter-personal relations</td>
+                <td>Bar-Ilan University</td>
+                <td>tova.gamliel@biu.ac.il</td>
+                <td>Director, BA Departmental Committee</td>
+              </tr>
+              <tr>
+                <th scope="row">80</th>
+                <td><a href="https://www.researchgate.net/profile/Tracy_Mitzner" style="text-decoration:underline;color: #000" target="_blank">Tracy L. Mitzner</a></td>
+                <td>● Gerontology</td>
+                <td>Georgia Institute of Technology</td>
+                <td>tracy@gatech.edu</td>
+                <td>Associate Director, Human Factors and Aging Laboratory</td>
+              </tr>
+              <tr>
+                <th scope="row">81</th>
+                <td><a href="https://scholar.google.com/citations?user=6_t280QAAAAJ&hl=en" style="text-decoration:underline;color: #000" target="_blank">Veena Chattaraman</a></td>
+                <td>● Consumer Behavior<br/>● Intelligent Technologies<br/>● Product Design</td>
+                <td>Auburn University</td>
+                <td>vzc0001@auburn.edu</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">82</th>
+                <td><a href="https://www.uhnresearch.ca/researcher/veronique-boscart" style="text-decoration:underline;color: #000" target="_blank">Veronique M Boscart</a></td>
+                <td>● Gerontology/Geriatrics<br/>● Aging<br/>● Nursing</td>
+                <td>Conestoga College Canada</td>
+                <td>vboscart@conestogac.on.ca</td>
+                <td>Affiliate Scientist</td>
+              </tr>
+              <tr>
+                <th scope="row">83</th>
+                <td><a href="https://scholar.google.com/citations?user=XCPtQX0AAAAJ&hl=ko" style="text-decoration:underline;color: #000" target="_blank">Wan Chul Yoon</a></td>
+                <td>● HCI<br/>● Cognitive Engineering<br/>● System Safety</td>
+                <td>Korea Advanced Institute of Science and Technology</td>
+                <td>wcyoon@gmail.com</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">84</th>
+                <td><a href="https://www.researchgate.net/scientific-contributions/2106085034_Wang-Chin_Tsai" style="text-decoration:underline;color: #000" target="_blank">Wang-Chin Tsai</a></td>
+                <td>● User Experience<br/>● Usability<br/>● User Experience in Advanced Technological Environments</td>
+                <td> </td>
+                <td> </td>
+                <td>Assistant Professor at Fo Guang University</td>
+              </tr>
+              <tr>
+                <th scope="row">85</th>
+                <td><a href="http://www.billrouse.com/" style="text-decoration:underline;color: #000" target="_blank">William B. Rouse</a></td>
+                <td>● Individual and Organizational Decision Making<br/>● Design of Organizations and Information Systems</td>
+                <td>Stevens Institute of Technology</td>
+                <td>wrouse@stevens.edu</td>
+                <td>Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">86</th>
+                <td><a href="https://engineering.nyu.edu/faculty/winslow-burleson" style="text-decoration:underline;color: #000" target="_blank">Winslow Burleson</a></td>
+                <td>● HCI<br/>● Affective Learning</td>
+                <td>New York University</td>
+                <td>wb50@nyu.edu</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">87</th>
+                <td><a href="https://chicago.medicine.uic.edu/departments/academic-departments/neurology-rehabilitation/neurology-rehabilitation-faculty/name/woojin-song/" style="text-decoration:underline;color: #000" target="_blank">Woojin Song</a></td>
+                <td>● Neuropsychology<br/>● Memory & Aging Clinic</td>
+                <td>University of Illinois at Chicago</td>
+                <td>wjsong@uic.edu</td>
+                <td>Assistant Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">88</th>
+                <td><a href="https://www.researchgate.net/profile/Ying_Wang241" style="text-decoration:underline;color: #000" target="_blank">Ying Wang</a></td>
+                <td>● User Experience<br/>● Transportation<br/>● Usability<br/>● User Studies</td>
+                <td>Beihang University</td>
+                <td>yingwang@buaa.edu.cn</td>
+                <td>Associate Professor</td>
+              </tr>
+              <tr>
+                <th scope="row">89</th>
+                <td><a href="https://yonsei.pure.elsevier.com/en/persons/yong-gu-ji" style="text-decoration:underline;color: #000" target="_blank">Yong Gu Ji</a></td>
+                <td>● Smartphones<br/>● Intranet<br/>● HCI<br/>● Haptic Interface<br/>● Information Systems<br/>● User Interface<br/>● Driver</td>
+                <td>Yonsei University</td>
+                <td>yongguji@yonsei.ac.kr</td>
+                <td>Associate Professor in the Department of Information and Industrial Engineering</td>
+              </tr>
+
+
             </table>
             <!-- \ Table -->
-
   
     </div>
 </div>
@@ -267,6 +880,9 @@
 
 
 <script src="js/jQuery/jquery.filtertable.min.js"></script>
+<script type="text/javascript"src="js/jQuery/jquery.tablesorter.min.js"></script>
+<script type="text/javascript">
+$("#table").tablesorter()</script>
 
 <script>
       $(document).ready(function() {
@@ -277,8 +893,12 @@
   </script>
 
 <!-- \ JS Files  -->
-  
+
+<!--点击表头升序降序-->
+<!-- <script src="js/sort.js"></script> -->
+
 
 
 </body>
+
 </html>
