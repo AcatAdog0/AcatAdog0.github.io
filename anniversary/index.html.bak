@@ -1,0 +1,168 @@
+<!--
+ * @Author: YanL
+ * @Email: imyanl.dt@gmail.com
+ * @Date: 2021-06-23 10:35:59
+ * @LastModifiedBy: YanL
+ * @LastEditTime: 2021-06-23 17:19:07
+ * @Description: 请输入...
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./index_files/swiper-bundle.min.css">
+
+  <!-- Demo styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper-container {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: rgba(0, 0, 0, 0);
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">
+        <div id="code">
+          <span class="say">* ly & zy</span><br>
+      <span class="say"> </span><br>
+                  <span class="say">// 我们过了一年现在感觉就像老夫老妻一样哈哈哈</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我们的第一年很开心，你很美而且爱我</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我也越来越爱你，我也变好看了吧？</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 每天手上都牵着你真的很幸福</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 感觉就像拥有全世界</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 之后的路你也不需要担心</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 宝贝儿，有我在，什么都能搞得定</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我们会像下面的秒针一样一直走下去</span><br>
+                        <span class="say"> </span><br>
+    <span class="say">// 你永远都是我的宝贝儿 _lyzzy forever_</span><br>
+      <span class="say"> </span><br>
+                      <span class="say"><span class="space"></span><span class="space"></span>-- ly--</span>
+        </div>
+
+        
+      </div>
+      <div class="swiper-slide">
+
+        <div id="code">
+          <span class="say">* ly & zy</span><br>
+      <span class="say"> </span><br>
+    <span class="say">// 宝贝儿我们已经在一起500天了嗷</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 时间过得好快哦</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 现在你已经是一名研究生了嗷</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 嗑盐的路上肯定没有那么轻松</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我会一直在你身边陪着你支持你</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我永远是你坚强的后盾</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我们两个的组合是最nb的嗷</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我爱你宝贝儿_lyzzynb forever_</span><br>
+                        <span class="say"> </span><br>
+    <span class="say">// To be continued...</span><br>
+      <span class="say"> </span><br>
+                      <span class="say"><span class="space">-- ly 2019.11.06--</span>
+    <!--                         <span class="say">// 我们过了一年现在感觉就像老夫老妻一样哈哈哈</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我们的第一年很开心，你很美而且爱我</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我也越来越爱你，我也变好看了吧？</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 每天手上都牵着你真的很幸福</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 感觉就像拥有全世界</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 之后的路你也不需要担心</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 宝贝儿，有我在，什么都能搞得定</span><br>
+      <span class="say"> </span><br>
+          <span class="say">// 我们会像下面的秒针一样一直走下去</span><br>
+                        <span class="say"> </span><br>
+    <span class="say">// 你永远都是我的宝贝儿 _lyzzy forever_</span><br>
+      <span class="say"> </span><br> -->
+        </div>
+
+      </div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="./index_files/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      direction: 'vertical',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
+</html>
